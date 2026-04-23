@@ -1,0 +1,9 @@
+{
+    "name": "aiframework",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "test:web": "cd apps/web && npx playwright test",
+        "analyze:local": "bash ai/tools/run-and-capture.sh"
+    }
+}

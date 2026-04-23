@@ -1,0 +1,47 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests/smoke.spec.ts:6:9 › Smoke › should open Playwright homepage error
+[1A[2K  1) [chromium] › tests/smoke.spec.ts:6:9 › Smoke › should open Playwright homepage error ──────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText('THIS SHOULD FAIL')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByText('THIS SHOULD FAIL')[22m
+
+
+      10 |         await homePage.assertLoaded();
+      11 |
+    > 12 |         await expect(page.getByText('THIS SHOULD FAIL')).toBeVisible();
+         |                                                          ^
+      13 |     });
+      14 | });
+        at /Users/ervinabedin/aiFramework/apps/web/tests/smoke.spec.ts:12:58
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../artifacts/test-results/smoke-Smoke-should-open-Playwright-homepage-error-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../artifacts/test-results/smoke-Smoke-should-open-Playwright-homepage-error-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../artifacts/test-results/smoke-Smoke-should-open-Playwright-homepage-error-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../artifacts/test-results/smoke-Smoke-should-open-Playwright-homepage-error-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../artifacts/test-results/smoke-Smoke-should-open-Playwright-homepage-error-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  1 failed
+    [chromium] › tests/smoke.spec.ts:6:9 › Smoke › should open Playwright homepage error ───────────

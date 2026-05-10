@@ -5,5 +5,12 @@
     "scripts": {
         "test:web": "cd apps/web && npx playwright test",
         "analyze:local": "bash ai/tools/run-and-capture.sh"
+    },
+    "dependencies": {
+        "playwright": "^1.59.1"
+    },
+    "devDependencies": {
+        "@axe-core/playwright": "^4.11.3",
+        "@faker-js/faker": "^10.4.0"
     }
 }

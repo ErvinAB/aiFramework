@@ -17,8 +17,10 @@ artifacts/screenshots/*
 artifacts/traces/*
 artifacts/videos/*
 artifacts/reports/*
+private-swarm-secrets.md
 
 !artifacts/screenshots/.gitkeep
 !artifacts/traces/.gitkeep
 !artifacts/videos/.gitkeep
 !artifacts/reports/.gitkeep
+
